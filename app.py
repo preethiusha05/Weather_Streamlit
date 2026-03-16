@@ -6,12 +6,10 @@ import matplotlib.pyplot as plt
 st.title("Weather Dashboard")
 
 # Weather icon
-st.image("C:\weather_dashboard\Wallpaper_ Cloudy mood Wallpaper_.jpg", width=120)
+st.image("weather.jpg", width=120)
 
 # Load dataset
 df = pd.read_csv("weatherHistory.csv")
-
-# Remove column spaces if any
 df.columns = df.columns.str.strip()
 
 # Show dataset
